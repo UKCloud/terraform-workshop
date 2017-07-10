@@ -1,0 +1,18 @@
+version: "3"
+services:
+  tf:
+    build: ./
+    image: ukc/terrform-workshop
+    container_name: terrform-workshop
+    hostname: terrform-workshop
+    volumes:
+      - ./:/srv/
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    environment:
+      - VCD_URL=https://portal.skyscapecloud.com/api
+      - VCD_ORG=xxxx
+      - VCD_USER=xxxx
+      - VCD_PASSWORD=xxxx
+    tty: true
