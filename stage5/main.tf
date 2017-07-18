@@ -30,7 +30,7 @@ resource "vcd_vapp_vm" "web1" {
   vapp_name     = "${vcd_vapp.webble.name}"
   name          = "bobby_new_web_vm1_July10_1"
   catalog_name  = "Skyscape Catalogue"
-  template_name = "Skyscape_CentOS_7_3_x64_60GB_Small_V1.0.0"
+  template_name = "Skyscape_CentOS_6_4_x64_50GB_Small_v1.0.1"
   memory        = 4096
   cpus          = 2
 

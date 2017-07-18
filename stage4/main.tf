@@ -30,9 +30,4 @@ resource "vcd_vapp" "web" {
   network_name = "${vcd_network.net.name}"
   ip           =  "${cidrhost(var.network_ip_pool, 180)}"
 
-  metadata {
-    role    = "web"
-    env     = "staging"
-    version = "v1"
-  }
 }

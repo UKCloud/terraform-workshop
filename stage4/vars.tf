@@ -14,7 +14,7 @@ variable "catalog" {
 	default = "Skyscape Catalogue" 
 }
 variable "vapp_template" {
-	default = "Skyscape_CentOS_7_3_x64_60GB_Small_V1.0.0"
+	default = "Skyscape_CentOS_6_4_x64_50GB_Small_v1.0.1"
 }
 
 variable "network_ip_pool" {

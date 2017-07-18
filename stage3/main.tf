@@ -30,9 +30,4 @@ resource "vcd_vapp" "web" {
   network_name = "${vcd_network.net.name}"
   ip           = "10.170.0.180"
 
-  metadata {
-    role    = "web"
-    env     = "staging"
-    version = "v1"
-  }
 }
